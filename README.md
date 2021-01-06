@@ -80,23 +80,6 @@ Para criar o xml iremos utiliza a a biblioteca do python xml.etree.ElementTree. 
 	    ET.SubElement(doc_child, "value3").text = str(cleaner['value3'])
 	    ET.SubElement(doc_child, "value4").text = str(cleaner['value4'])
 
-O formato dos dados para o exemplo será:
-
-    cleaner = {}
-    cleaner['value1'] = "4"
-    cleaner['value2'] = "5"
-    cleaner['value3'] = "6"
-    cleaner['value4'] = "7"
-    
-    list_cleaner = []
-    list_cleaner.append(cleaner)
-    cleaner = {}
-    cleaner['value1'] = "4"
-    cleaner['value2'] = "5"
-    cleaner['value3'] = "6"
-    cleaner['value4'] = "7"
-    list_cleaner.append(cleaner)
-
 Para criar o xml iremos chamar a função create_xml, passando a pasta que será importada e a lista de dados
 
     cleaner = {}
